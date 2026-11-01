@@ -2,12 +2,18 @@
   "name": "fit-truncate",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node --test"
+    "test": "node --test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=24"
   },
   "dependencies": {
     "@garmin/fitsdk": "^21.218.0",
@@ -15,6 +21,8 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^6.0.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-svelte": "^4.1.1",
     "vite": "^7.0.0"
   }
 }

@@ -2,3 +2,4 @@ node_modules/
 dist/
 *.fit
 .DS_Store
+.idea/

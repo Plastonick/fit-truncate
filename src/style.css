@@ -1,248 +1,255 @@
 :root {
-    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-    color: #243446;
-    background: #f5f8fb;
-    font-synthesis: none;
-    line-height: 1.5;
-    --accent: #155b91;
-    --border: #c9d4df;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  color: #243446;
+  background: #f5f8fb;
+  font-synthesis: none;
+  line-height: 1.5;
+  --accent: #155b91;
+  --border: #c9d4df;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1.25rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
 }
 
 h1 {
-    font-size: 2rem;
-    letter-spacing: -.04em;
-    margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+  margin: 0;
 }
 
 h2 {
-    font-size: 1.15rem;
-    margin: 0 0 .75rem;
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
 }
 
 p {
-    margin: .5rem 0 1rem;
-    max-width: 78ch;
+  margin: 0.5rem 0 1rem;
+  max-width: 78ch;
 }
 
 section {
-    margin-top: 1.75rem;
+  margin-top: 1.75rem;
 }
 
 .upload {
-    padding: 1.25rem;
-    background: #e8f1f8;
-    border-left: 4px solid var(--accent);
+  padding: 1.25rem;
+  background: #e8f1f8;
+  border-left: 4px solid var(--accent);
 }
 
 .upload label {
-    font-weight: 600;
-    display: block;
-    margin-bottom: .65rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.65rem;
 }
 
 .upload p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .filename {
-    overflow-wrap: anywhere;
+  overflow-wrap: anywhere;
 }
 
-.muted, dt {
-    color: #53667a;
-    font-size: .9rem;
+.muted,
+dt {
+  color: #53667a;
+  font-size: 0.9rem;
 }
 
 dl {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem 2.5rem;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.5rem;
+  margin: 0;
 }
 
 dd {
-    margin: .15rem 0 0;
-    font-weight: 600;
+  margin: 0.15rem 0 0;
+  font-weight: 600;
 }
 
-.controls, .download, .pagination, .table-tools {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: .75rem;
+.controls,
+.download,
+.pagination,
+.table-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .controls {
-    align-items: end;
+  align-items: end;
 }
 
 .controls label {
-    display: flex;
-    flex-direction: column;
-    gap: .3rem;
-    font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
 }
 
-button, input {
-    font: inherit;
+button,
+input {
+  font: inherit;
 }
 
-button, input[type='number'] {
-    padding: .5rem .75rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
+button,
+input[type='number'] {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
 }
 
 input[type='number'] {
-    width: 9rem;
-    background: white;
-    color: inherit;
+  width: 9rem;
+  background: white;
+  color: inherit;
 }
 
 button {
-    cursor: pointer;
-    color: var(--accent);
-    background: white;
-    font-weight: 600;
+  cursor: pointer;
+  color: var(--accent);
+  background: white;
+  font-weight: 600;
 }
 
 button:hover:not(:disabled) {
-    background: #e8f1f8;
+  background: #e8f1f8;
 }
 
 button:disabled {
-    cursor: default;
-    opacity: .45;
+  cursor: default;
+  opacity: 0.45;
 }
 
 button.primary {
-    background: var(--accent);
-    color: white;
-    border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
 }
 
 button.primary:hover:not(:disabled) {
-    background: #10446d;
+  background: #10446d;
 }
 
 button.quiet {
-    border-color: transparent;
-    background: transparent;
-    text-decoration: underline;
+  border-color: transparent;
+  background: transparent;
+  text-decoration: underline;
 }
 
 :focus-visible {
-    outline: 3px solid #b56a05;
-    outline-offset: 3px;
+  outline: 3px solid #b56a05;
+  outline-offset: 3px;
 }
 
 .ranges {
-    padding-left: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 .download {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .download p {
-    margin: 0;
+  margin: 0;
 }
 
 .table-tools {
-    justify-content: space-between;
-    margin-bottom: .75rem;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
 }
 
 .table-tools p {
-    margin: 0;
+  margin: 0;
 }
 
 .table-wrap {
-    overflow: auto;
-    max-height: 36rem;
-    border: 1px solid var(--border);
-    background: white;
+  overflow: auto;
+  max-height: 36rem;
+  border: 1px solid var(--border);
+  background: white;
 }
 
 table {
-    border-collapse: separate;
-    border-spacing: 0;
-    width: 100%;
-    font-size: .85rem;
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
-th, td {
-    text-align: left;
-    padding: .6rem .75rem;
-    border-bottom: 1px solid #e4eaf0;
-    max-width: 40rem;
-    overflow-wrap: anywhere;
+th,
+td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #e4eaf0;
+  max-width: 40rem;
+  overflow-wrap: anywhere;
 }
 
 thead th {
-    position: sticky;
-    top: 0;
-    background: #e8eef4;
-    z-index: 1;
+  position: sticky;
+  top: 0;
+  background: #e8eef4;
+  z-index: 1;
 }
 
 tbody th {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 tr.removed {
-    background: #fff0ee;
-    color: #8a3025;
+  background: #fff0ee;
+  color: #8a3025;
 }
 
 .pagination {
-    justify-content: center;
-    margin-top: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .error {
-    padding: .75rem 1rem;
-    border-left: 4px solid #a83427;
-    background: #fff0ee;
-    color: #8a3025;
-    margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid #a83427;
+  background: #fff0ee;
+  color: #8a3025;
+  margin-top: 1rem;
 }
 
 code {
-    font-size: .95em;
+  font-size: 0.95em;
 }
 
 @media (max-width: 600px) {
-    main {
-        padding: 1.25rem .9rem 3rem;
-    }
+  main {
+    padding: 1.25rem 0.9rem 3rem;
+  }
 
-    .download {
-        align-items: start;
-        flex-direction: column;
-    }
+  .download {
+    align-items: start;
+    flex-direction: column;
+  }
 
-    .pagination {
-        gap: .5rem;
-    }
+  .pagination {
+    gap: 0.5rem;
+  }
 
-    .pagination button {
-        padding: .4rem .55rem;
-    }
+  .pagination button {
+    padding: 0.4rem 0.55rem;
+  }
 }

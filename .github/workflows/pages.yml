@@ -1,7 +1,9 @@
+# Requires Settings → Pages → Build and deployment → Source: "GitHub Actions".
+# Without it, deploy fails with "Not Found" because the Pages site doesn't exist.
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,9 +22,11 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - run: npm run format:check
       - run: npm test
       - run: npm run build
-      - uses: actions/configure-pages@v5
+      # configure-pages is omitted: Vite builds with relative asset paths, so
+      # the site needs no base-path information from the Pages API.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
