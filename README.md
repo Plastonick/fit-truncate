@@ -2,11 +2,6 @@
 
 A small Svelte + Vite page for removing ranges of `device_info` messages from FIT files. All file processing happens in the browser; there is no backend, upload, analytics, or remote font dependency.
 
-## Project principles
-
-- **Keep it a minimal MVP.** Prefer the simplest change that works: few dependencies, no frameworks or tooling beyond Svelte + Vite, and no features beyond removing `device_info` ranges.
-- **Process files entirely client-side.** FIT files are read, edited, and downloaded in the browser. Never add a backend, upload, analytics, or third-party requests.
-
 ## Run locally
 
 Use Node.js 24 LTS.
